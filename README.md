@@ -30,9 +30,24 @@ This script generates Swagger comments in a specific format for API endpoints de
 - Ensure the structure and format of your JSON files adhere to Swagger/OpenAPI specifications for proper merging and compatibility.
 - This script assumes all JSON files in the 'api' folder are valid Swagger/OpenAPI documents.
 
+
+## Limitation 
+- this has some limitations plz follow the below instructions to have best 
+### 1 id in path as in apidog we pass some values some in creations it produces an number in path 
+- follow this [img](https://photos.app.goo.gl/pesB5ErGTF6RnKdq7)
+
+### 2 in post and patch api it will produce an schema error so 
+use  the this [prompt 👉 resources of chatgpt prompt](https://chatgpt.com/share/64245474-b90b-414b-a3e8-7fa5e1a8341c)
+
+### 3  in file upload the file upload scema is still not integrated 
+ ###### it will save 80% of time writing swagger but still have some limitations 
+ #### make sure to copy the Collab file and after  execution in runtime manage session close the runtime 
+
 ## Troubleshooting
 
 - **No JSON Files Found**: If the script reports no JSON files found in the 'api' folder, ensure your files are uploaded and the path is correct.
+
+- free to ping me 
 ## Resources for @swaggger 
 
 [Access to Google Colab or Jupyter Notebook environment. file](https://github.com/HirenOrdex/ets_doc/blob/main/_swagger_main.ipynb)
@@ -41,3 +56,6 @@ This script generates Swagger comments in a specific format for API endpoints de
 [chatGPT Promt](https://chatgpt.com/share/64245474-b90b-414b-a3e8-7fa5e1a8341c)
 
 [video doc](https://photos.app.goo.gl/K1QvQVNvRrWjK4cw7)
+
+
+## [Author](https://hirenlalani.netlify.app/)
