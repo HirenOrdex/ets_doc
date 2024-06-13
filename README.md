@@ -53,6 +53,11 @@ The script performs two main functions:
 ## Troubleshooting
 
 - **No JSON Files Found**: If the script reports no JSON files found in the 'api' folder, ensure your files are uploaded and the path is correct.
+## Resources for @swaggger 
+
+[Access to Google Colab or Jupyter Notebook environment. file](https://github.com/HirenOrdex/ets_doc/blob/main/_swagger_main.ipynb)
 
 
-[Access to Google Colab or Jupyter Notebook environment. file](https://colab.research.google.com/drive/1oEla4xdVF5EOwviLBXFVnyWla-1bpQmb?usp=sharing)
+[chatGPT Promt](https://chatgpt.com/share/64245474-b90b-414b-a3e8-7fa5e1a8341c)
+
+[video doc](https://photos.app.goo.gl/K1QvQVNvRrWjK4cw7)
