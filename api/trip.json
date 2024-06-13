@@ -1,0 +1,457 @@
+{
+    "info": {
+        "title": "My Project",
+        "description": "",
+        "version": "1.0.0"
+    },
+    "tags": [
+      
+        {
+            "name": "ETS/Trip"
+        }
+    ],
+    "paths": {
+        "/trip/getalltrip": {
+            "get": {
+                "summary": "get trip data",
+                "deprecated": false,
+                "description": "",
+                "tags": [
+                    "ETS/Trip"
+                ],
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "x-example": "1"
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "x-example": "100"
+                    },
+                    {
+                        "name": "vehicle_info",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "x-example": "GJ-16-AD2166"
+                    },
+                    {
+                        "name": "trip_code",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "x-example": "T23-24/122264"
+                    },
+                    {
+                        "name": "transporter_name",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "x-example": "shyam"
+                    },
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "x-example": "2024-03-18"
+                    },
+                    {
+                        "name": "to",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "x-example": "2024-03-20"
+                    },
+                    {
+                        "name": "trip_type",
+                        "in": "query",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "x-example": "close"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "x-example": "trip not settle"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "type": "object",
+                            "properties": {}
+                        }
+                    }
+                },
+                "security": [],
+                "produces": [
+                    "application/json"
+                ]
+            }
+        },
+        "/trip/search": {
+            "get": {
+                "summary": "search trip",
+                "deprecated": false,
+                "description": "",
+                "tags": [
+                    "ETS/Trip"
+                ],
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "x-example": "1"
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "x-example": "10"
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "x-example": "T24-25/201233"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "x-example": "close"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "type": "object",
+                            "properties": {}
+                        }
+                    }
+                },
+                "security": [],
+                "produces": [
+                    "application/json"
+                ]
+            }
+        },
+        "/trip/fetchdata": {
+            "get": {
+                "summary": "fetch data",
+                "deprecated": false,
+                "description": "",
+                "tags": [
+                    "ETS/Trip"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "type": "object",
+                            "properties": {}
+                        }
+                    }
+                },
+                "security": [],
+                "produces": [
+                    "application/json"
+                ]
+            }
+        },
+        "/trip/closeTrip/2": {
+            "patch": {
+                "summary": "CloseTrip",
+                "deprecated": false,
+                "description": "",
+                "tags": [
+                    "ETS/Trip"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "userId": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "userId"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "type": "object",
+                            "properties": {}
+                        }
+                    }
+                },
+                "security": [],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ]
+            }
+        },
+        "/trip/settleTrip/2": {
+            "patch": {
+                "summary": "settleTrip",
+                "deprecated": false,
+                "description": "",
+                "tags": [
+                    "ETS/Trip"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "userId": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "userId"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "type": "object",
+                            "properties": {}
+                        }
+                    }
+                },
+                "security": [],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ]
+            }
+        },
+        "/trip/viewclosetrip/3": {
+            "get": {
+                "summary": "viewCloseTrip",
+                "deprecated": false,
+                "description": "",
+                "tags": [
+                    "ETS/Trip"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "type": "object",
+                            "properties": {}
+                        }
+                    }
+                },
+                "security": [],
+                "produces": [
+                    "application/json"
+                ]
+            }
+        },
+        "/trip/viewsettletrip/2": {
+            "get": {
+                "summary": "viewSettleTrip",
+                "deprecated": false,
+                "description": "",
+                "tags": [
+                    "ETS/Trip"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "type": "object",
+                            "properties": {}
+                        }
+                    }
+                },
+                "security": [],
+                "produces": [
+                    "application/json"
+                ]
+            }
+        },
+        "/trip/addfinalexpenses/6": {
+            "post": {
+                "summary": "addFinalExpenses",
+                "deprecated": false,
+                "description": "",
+                "tags": [
+                    "ETS/Trip"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "entry_expense": {
+                                    "type": "integer"
+                                },
+                                "parking_expense": {
+                                    "type": "integer"
+                                },
+                                "additional_expense": {
+                                    "type": "integer"
+                                },
+                                "vehicle_repairing": {
+                                    "type": "integer"
+                                },
+                                "total_trip_distance": {
+                                    "type": "integer"
+                                },
+                                "userId": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "entry_expense",
+                                "parking_expense",
+                                "additional_expense",
+                                "vehicle_repairing",
+                                "total_trip_distance",
+                                "userId"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "type": "object",
+                            "properties": {}
+                        }
+                    }
+                },
+                "security": [],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ]
+            }
+        },
+        "/trip/updatefinalexpenses/48": {
+            "patch": {
+                "summary": "updateFinalExpenses",
+                "deprecated": false,
+                "description": "",
+                "tags": [
+                    "ETS/Trip"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "entry_expense": {
+                                    "type": "integer"
+                                },
+                                "parking_expense": {
+                                    "type": "integer"
+                                },
+                                "additional_expense": {
+                                    "type": "integer"
+                                },
+                                "vehicle_repairing": {
+                                    "type": "integer"
+                                },
+                                "total_trip_distance": {
+                                    "type": "integer"
+                                },
+                                "userId": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "entry_expense",
+                                "parking_expense",
+                                "additional_expense",
+                                "vehicle_repairing",
+                                "total_trip_distance",
+                                "userId"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "type": "object",
+                            "properties": {}
+                        }
+                    }
+                },
+                "security": [],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ]
+            }
+        }
+    },
+    "swagger": "2.0",
+    "definitions": {},
+    "securityDefinitions": {},
+    "x-components": {}
+}
