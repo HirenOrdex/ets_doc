@@ -1,49 +1,29 @@
-Certainly! Here's a basic README.md template for your script that you can use in your project:
-
-```markdown
-# Merge JSON Files Script
-
-This Python script merges multiple JSON files into a single file and monitors them for updates. It is designed to be used in Google Colab for managing Swagger/OpenAPI specification files dynamically.
+# Swagger Comments Generator
 
 ## Overview
 
-The script performs two main functions:
+This script generates Swagger comments in a specific format for API endpoints defined in JSON files. It helps maintain consistency and clarity in documenting API endpoints using Swagger/OpenAPI specifications.
 
-1. **Initial Merge**: Combines all JSON files in the 'api' folder into a single `ets_doc.json` file.
-2. **Watch for Changes**: Monitors the 'api' folder for any modifications to JSON files and updates `ets_doc.json` accordingly.
+## Features
 
-## Prerequisites
+- Automatically reads Swagger/OpenAPI JSON files from a specified folder.
+- Generates structured Swagger comment blocks for each endpoint, including tags, summary, parameters, request body, and responses.
+- Handles nested properties and arrays in request bodies and parameters.
+- Outputs generated Swagger comments to separate `.txt` files for each Swagger JSON file processed.
+- Compatible with Google Colab for cloud-based execution.
 
-- Access to Google Colab or Jupyter Notebook environment.   https://colab.research.google.com/drive/1oEla4xdVF5EOwviLBXFVnyWla-1bpQmb?usp=sharing
-- JSON files structured according to Swagger/OpenAPI specifications in the 'api' folder.
+## Requirements
 
-## Setup
+- Python 3.x
+- JSON formatted Swagger/OpenAPI specification files in a specified folder
 
-1. **Upload JSON Files**: Ensure your Swagger/OpenAPI JSON files are uploaded to the 'api' folder within your Google Colab environment.
-2. **Upload the Script**: Upload the `merge_json.py` script to your Colab environment.
+## Usage in Google Colab
 
-## Usage
-
-### Running the Script
-
-1. **Initial Merge**:
+1. Upload your Swagger/OpenAPI JSON files to Google Colab's virtual machine:
+   - Use the file upload feature in Google Colab to upload your JSON files.
    ```python
-   from glob import glob
-   initial_merge_and_write()
-   ```
-   This function merges all JSON files initially and creates `ets_doc.json`.
-
-2. **Watch for Changes**:
-   ```python
-   watch_for_changes()
-   ```
-   This function starts monitoring the 'api' folder for any changes in JSON files. It runs indefinitely until interrupted.
-
-### Example Workflow
-
-- Upload your Swagger/OpenAPI JSON files to the 'api' folder.
-- Execute `initial_merge_and_write()` to create `ets_doc.json`.
-- Start `watch_for_changes()` to automatically update `ets_doc.json` whenever any JSON file in the 'api' folder is modified.
+   from google.colab import files
+   uploaded = files.upload()
 
 ## Notes
 
