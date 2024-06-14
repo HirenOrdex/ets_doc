@@ -37,7 +37,7 @@ This script generates Swagger comments in a specific format for API endpoints de
 - follow this [img](https://photos.app.goo.gl/pesB5ErGTF6RnKdq7)
 
 ### 2 in post and patch api it will produce an schema error so 
-use  the this [prompt 👉 resources of chatgpt prompt](https://chatgpt.com/share/64245474-b90b-414b-a3e8-7fa5e1a8341c)
+use  the this [prompt 👉 resources of chatgpt prompt](https://chatgpt.com/share/f5cd3d07-4eaf-4446-9e96-4bc8c4a23248)
 
 ### 3  in file upload the file upload scema is still not integrated 
  ###### it will save 80% of time writing swagger but still have some limitations 
@@ -53,7 +53,7 @@ use  the this [prompt 👉 resources of chatgpt prompt](https://chatgpt.com/shar
 [Access to Google Colab or Jupyter Notebook environment. file](https://github.com/HirenOrdex/ets_doc/blob/main/_swagger_main.ipynb)
 
 
-[chatGPT Promt](https://chatgpt.com/share/64245474-b90b-414b-a3e8-7fa5e1a8341c)
+[chatGPT Promt](https://chatgpt.com/share/f5cd3d07-4eaf-4446-9e96-4bc8c4a23248)
 
 [video doc](https://photos.app.goo.gl/K1QvQVNvRrWjK4cw7)
 
