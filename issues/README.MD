@@ -5,7 +5,7 @@
 #### check the body parms in api
 [check the body parms in api](https://photos.app.goo.gl/gy1UBGm1KRudPFK8A)
  
- ### in correct schema 
+ ### incorrect schema 
 ```
 
 /**
