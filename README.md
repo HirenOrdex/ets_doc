@@ -56,6 +56,6 @@ use  the this [prompt 👉 resources of chatgpt prompt](https://chatgpt.com/shar
 [chatGPT Promt](https://chatgpt.com/share/f5cd3d07-4eaf-4446-9e96-4bc8c4a23248)
 
 [video doc](https://photos.app.goo.gl/K1QvQVNvRrWjK4cw7)
-
+[chatGPT Resorce for json to @swagger](https://chatgpt.com/share/761cc259-91f9-49cc-ad08-b94eba6cc15f)
 
 ## [Author](https://hirenlalani.netlify.app/)
